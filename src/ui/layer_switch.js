@@ -10,12 +10,10 @@ module.exports = function(context) {
             })
         }, {
             title: 'Satellite',
-            layer: L.TileLayer.WMS(imageryWMSUrl, {
-				layers: '0',
-				format: 'image/png',
-				transparent: true,
-				attribution: "USDA FSA NAIP"
-			})
+            layer: L.mapbox.tileLayer('tmcw.map-j5fsp01s', {
+                retinaVersion: 'tmcw.map-ujx9se0r',
+                detectRetina: true
+            })
         }, {
             title: 'OSM',  
             layer: L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
