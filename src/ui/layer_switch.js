@@ -14,8 +14,9 @@ module.exports = function(context) {
                 tms: true })
         }, {
             title: 'OSM',  
-            layer: L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
-                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            layer: L.tileLayer('http://maps{s}.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+                subdomains: '123'
             })
         }];
 
