@@ -10,8 +10,8 @@ module.exports = function(context) {
             })
         }, {
             title: 'Satellite',  
-            layer: L.tileLayer('http://69.54.58.147:8080/tms/1.0.0/osm_EPSG900913/{z}/{x}/{y}.jpg', {
-                tms: true })
+            layer: L.tileLayer('http://69.54.58.147:8080/tms/1.0.0/osm_EPSG900913/{z}/{x}/{y}.jpg',
+                tms: true )
         }, {
             title: 'OSM',  
             layer: L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
