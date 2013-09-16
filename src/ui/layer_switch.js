@@ -10,7 +10,7 @@ module.exports = function(context) {
             })
         }, {
             title: 'Satellite',  
-            layer: L.tileLayer('http://69.54.58.147:8080/tms/1.0.0/osm_EPSG900913/{z}/{x}/{y}.png', {
+            layer: L.tileLayer('http://69.54.58.147:8080/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
                 tms: true })
         }, {
             title: 'OSM',  
