@@ -3,12 +3,6 @@ module.exports = function(context) {
     return function(selection) {
 
         var layers = [{
-            title: 'MapBox',
-            layer: L.mapbox.tileLayer('tmcw.map-7s15q36b', {
-                retinaVersion: 'tmcw.map-u4ca5hnt',
-                detectRetina: true
-            })
-        }, {
             title: 'Satellite',  
             layer: L.tileLayer('http://69.54.58.147:8080/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
                 tms: false })
