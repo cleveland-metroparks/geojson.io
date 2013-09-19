@@ -3,15 +3,13 @@ module.exports = function(context) {
     return function(selection) {
 
         var layers = [{
-            title: 'Satellite',  
+            title: 'Leaf-On',  
             layer: L.tileLayer('http://69.54.58.147:8080/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
                 tms: false })
         }, {
-            title: 'OSM',  
-            layer: L.tileLayer('http://maps{s}.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
-                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-                subdomains: '123'
-            })
+            title: 'Leaf-Off',  
+            layer: L.tileLayer('http://69.54.58.147:8090/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
+                tms: false })
         }];
 
         var layerSwap = function(d) {
