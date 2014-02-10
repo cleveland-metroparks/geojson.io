@@ -2,18 +2,11 @@ module.exports = function(context) {
 
     return function(selection) {
 
-        var leafon = {
-            title: 'Leaf-On',  
-            layer: L.tileLayer('http://69.54.58.148:8080/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
-                tms: false }
-
-        var layers = L.layerGroup([leafon])
-        
-        /*[{
+        var layers = [{ 
             title: 'Leaf-On',  
             layer: L.tileLayer('http://69.54.58.148:8080/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
                 tms: false })
-        }*/
+        }
         /*, {
             title: 'Leaf-Off',  
             layer: L.tileLayer('http://69.54.58.148:8090/tiles/osm_EPSG900913/{z}/{x}/{y}.png?origin=nw', {
